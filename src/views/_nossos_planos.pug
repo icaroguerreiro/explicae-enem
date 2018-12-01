@@ -1,0 +1,50 @@
+include ../components/plans-block/plans-block
+section#nossos-planos.plans-container.mt-3
+  .container
+    .row
+      .col-12
+        h2.-subtitle-txt.mt-4 1. Escolha o período da assinatura
+        nav.text-center
+          span.plans-selector(data-tab-target='mensal') Mensal
+          span.plans-selector.-is-active(data-tab-target='anual') Anual
+        h2.-subtitle-txt.mt-4 2. Escolha o plano de acordo com suas necessidades
+    .row.mt-3
+      .col-12
+        .plans(data-tab='mensal')
+          .d-block.d-md-flex.-justify-center
+            +plans-block('Explicaê Turbo', 99)
+              li Mais de 3300 videoaulas de todas as matérias
+              li Apostilas teóricas de todas as matérias
+              li Exercícios em pdf para download
+              li Guia dos vestibulares de todo o Brasil
+              li As provas do enem e de outros vestibulares para download
+              li Mais de 12.000 exercícios online por níveis de dificuldade
+              li Plano de estudo individualizado de acordo com a sua rotina
+              li Horário de estudo personalizado
+            +plans-block('Explicaê Basicão 2019', 49, true)
+              li Mais de 3300 videoaulas de todas as matérias
+              li Apostilas teóricas de todas as matérias
+              li Exercícios em pdf para download
+              li Guia dos vestibulares de todo o Brasil
+              li As provas do enem e de outros vestibulares para download
+        .plans.-is-active(data-tab='anual')
+          .d-block.d-md-flex.-justify-center
+            +plans-block('Explicaê Medicina', 79)
+            +plans-block('Explicaê Turbo', 99, true)
+              li Mais de 3300 videoaulas de todas as matérias
+              li Apostilas teóricas de todas as matérias
+              li Exercícios em pdf para download
+              li Guia dos vestibulares de todo o Brasil
+              li As provas do enem e de outros vestibulares para download
+              li Mais de 12.000 exercícios online por níveis de dificuldade
+              li Plano de estudo individualizado de acordo com a sua rotina
+              li Horário de estudo personalizado
+            +plans-block('Explicaê Basicão 2019', 49)
+              li Mais de 3300 videoaulas de todas as matérias
+              li Apostilas teóricas de todas as matérias
+              li Exercícios em pdf para download
+              li Guia dos vestibulares de todo o Brasil
+              li As provas do enem e de outros vestibulares para download
+    .row.mt-5.text-center
+      .col-12
+        a.-btn.mt-3(href='#') Quero 7 dias grátis

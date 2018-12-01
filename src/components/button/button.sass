@@ -1,0 +1,25 @@
+.-btn
+  background: $pink
+  color: $yellow
+  padding: 10px 20px
+  display: inline-block
+  border-radius: 1rem
+  text-decoration: none
+  text-transform: uppercase
+  font-weight: 600
+  text-align: center
+  min-width: 200px
+  transition: .25s ease
+  box-shadow: 1px 3px 6px rgba(0,0,0,.15)
+  &:hover
+    background: scale-light($pink,-20%)
+  &.-btn-2
+    background: $yellow
+    color: $pink
+    &:hover
+      background: scale-light($yellow,-10%)
+.-btn-bottom
+  position: absolute
+  top: 100%
+  left: 50%
+  transform: translate(-50%,-50%)

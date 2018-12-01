@@ -1,0 +1,24 @@
+mixin plans-block(title, price, spotlight = false)
+  .plans-block
+    .plans-block-content
+      if spotlight
+        .plans-block_spotlight
+            span <i class="fa fa-star" aria-hidden="true"></i> <br>O MAIS VENDIDO
+      .plans-block__header.text-center
+        h3= title
+      .plans-block__prices.-purple-txt
+        p.-small-txt.text-center De <span class="-cut-txt">R$ 399,50</span>
+        .plans-block__prices__main.-flex-center
+          p.-smaller-text.text-right Por até<br> 12x de<br> <span class="-bigger-text ">R$</span></p>
+          p.-align-center.ml-1 <span class="-bibibigger-text font-weight-bold">#{price}</span><span class="-small-text">,90</span></p>
+        p.-smaller-text.text-center ou R$ 177,80 à vista
+      .plans-block__features-list
+        ul
+          if block
+            block
+          else
+            li Nam pretium <span class='-bg-cyan'>tortor vitae</span>
+            li Duis facilisis luctus urna
+            li <span class='-bg-yellow'>Pellentesque</span> fringilla enim
+            li Vivamus pulvinar sit amet
+    a.-btn.-btn-2.-btn-bottom(href='#') Assine Agora

@@ -1,0 +1,28 @@
+// Align Center With Flex
+.-flex-center,
+.-flex-center-x,
+.-flex-center-y
+  display: flex
+  &:not(.-flex-center-x)
+    align-items: center
+  &:not(.-flex-center-y)
+    justify-content: center
+
+.-sb
+  display: flex
+  justify-content: space-between
++mq($point: md)
+  .-sb.-sb-md
+    display: block
+    > * + *
+      margin-top: 3rem
+
+.-align-center
+  display: flex
+  align-items: center
+.-justify-center
+  display: flex
+  justify-content: center
+
+.-decoration-none
+  text-decoration: none

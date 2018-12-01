@@ -1,0 +1,18 @@
+
+doctype html
+html
+  //- Head
+  head
+    //- Template Head
+    include ./_head
+    //- Custom Page Head
+    block head
+  body(class= 'default')
+  
+    //- Content
+    #page-content
+      block content
+
+    //- Scripts
+    include ./_scripts
+    block script
